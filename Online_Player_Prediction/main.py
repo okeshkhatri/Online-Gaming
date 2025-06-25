@@ -4,7 +4,7 @@ import numpy as np
 from streamlit_option_menu import option_menu
 
 # Load trained model
-w = pickle.load(open(r'C:\internship\Online_Player_Prediction\online.sav', 'rb'))
+w = pickle.load(open(r'Online_Player_Prediction/online.sav', 'rb'))
 
 def predict(input_data):
     input_array = np.asarray(input_data).reshape(1, -1)
